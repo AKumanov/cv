@@ -9,3 +9,42 @@ img {
   float: left;
   margin-right: 15px;
 }
+.hobbies_button hover{
+  text-decoration: none;
+}
+
+body {
+  background-color: #fefaf6;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+  body {
+    background-color: #fefaf6;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+  h1 {
+    font-size: 35px;
+    font-family: Garamond;
+    color: #232320;
+    line-height: 150%;
+    letter-spacing: -1px;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  h2, h3, h4, h5 {
+    font-family: Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+  }
+  a, button, h6, input, li, p {
+    font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
