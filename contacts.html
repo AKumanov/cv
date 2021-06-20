@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact information</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact information</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label,
+        input {
+            padding: 5px;
+            margin: 3px;
+            font: 16px bold Tahoma;
+        }
+
+        #form {
+            float: left;
+            border: 3px solid black;
+            border-radius: 5%;
+            position: relative;
+            left: 450px;
+            height: auto;
+        }
+
+        .contact li {
+            list-style: none;
+            display: inline-block;
+            padding: 5px;
+            margin: 3px;
+        }
+        .title {
+            text-align: center;
+        }
+        .contact {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-  <h3>Contact me at:</h3>
-  <div class="contact">
-  <ul>
-    <li><strong>Telephone Number:</strong> +359 8 7646 3505</li>
-    <li><strong>Email address:</strong> kumana@abv.bg</li>
-    <li><strong>Twitter:</strong> @Kumana</li>
-    <li><strong>LinkedIn:</strong> Alexander Kumanov</li>
-    <li><strong>Github:</strong> kumana007</li>
-  </ul>
-  </div>
-  <hr>
-  <form action="mailto:kumana@abv.bg" method="post" enctype="text/plain">
-    <label>Your name:</label>
-    <input style="margin: 5px"type="text" name="yourName" value=""><br>
-    <label style="margin: 5px">Email:</label>
-    <input style="margin: 5px"type="email" name="yourEmail" value=""><br>
-    <label style="margin: 5px">Your Message</label><br>
-    <textarea style="margin: 5px"name="yourMessage" rows="10" cols="30"></textarea><br>
-    <input style="margin: 5px"type="submit" name="">
-  </form>
+    <div class="title">
+        <h3>Contact me at:</h3>
+    </div>
+    <div class="contact">
+        <ul>
+            <li><strong>Telephone Number:</strong> +359 8 7646 3505</li>
+            <li><strong>Email address:</strong> kumana@abv.bg</li>
+            <li><strong>Twitter:</strong> @Kumana</li>
+            <li><strong>LinkedIn:</strong> Alexander Kumanov</li>
+            <li><strong>Github:</strong> kumana007</li>
+        </ul>
+    </div>
+    <hr>
+    <!--   <form action="mailto:kumana@abv.bg" method="post" enctype="text/plain"> -->
+    <div id="form">
+        <form action="mailto:kumana@abv.bg" method="post" enctype="text/plain">
+            <fieldset style="padding: 5px;">
+                <legend>Customer Details</legend>
+                <div id="first_name">
+                    <label for="">First Name</label>
+                    <input type="text" name="" id="" placeholder="George" autofocus><br>
+                </div>
+                <div id="Last Name">
+                    <label for="">Last Name</label>
+                    <input type="text" name="" id="" placeholder="Davis"><br>
+                </div>
+                <div id="Gender">
+                    <label for="">Male</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Female</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Other</label>
+                    <input type="radio" name="" id=""><br>
+                </div>
+                <!-- <div id="contact_method">
+                    <label for="">Preferred contact method Email</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Phone</label>
+                    <input type="radio" name="" id=""><br>
+                </div> -->
+                <div id="email">
+                    <label for="">Email</label>
+                    <input type="email" name="" id="" placeholder="example@email.com"><br>
+                </div>
+                <div id="phone">
+                    <label for="">Phone</label>
+                    <input type="phone" name="" id="" placeholder="+359 876473505" minlength="18" maxlength="70"><br>
+                </div>
+                <div id="location">
+                    <label for="">Town</label>
+                    <select name="town" id="">
+                        <option value="Varna">Varna</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Burgas">Burgas</option>
+                        <option value="Plovdiv">Plovdiv</option>
+                        <option value="Silistra">Silistra</option>
+                    </select><br>
+                </div>
+                <div id="age">
+                    <label for="">Age</label>
+                    <input type="number" name="" id=""><br>
+                </div>
+                <div id="language">
+                    <label for="">Language</label>
+                    <input type="text" name="" id=""><br>
+                </div>
+                <div id="more_information">
+                    <textarea name="" id="" cols="35" rows="5" placeholder="More information..."></textarea><br>
+                </div>
+                <div id="terms">
+                    <input type="checkbox" checked>
+                    <label for="">I Agree the Terms and Conditions</label><br>
+                    <input type="submit" name="Send" id="" title="Send" value="Send">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
